@@ -1,1 +1,3 @@
-# smartmirror
+# SmartMirror
+
+> A little sideproject 
