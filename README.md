@@ -1,6 +1,5 @@
 # SmartMirror
 
-> A little sideproject 
 > A SmartMirror with lots of funktions including:
 > - Weather Feed 
 > - RSS Feed 
