@@ -7,3 +7,5 @@
 - [ ] Calender (google, etc.)
 - [ ] RSS Feed for news 
 - [ ] Voice assistant
+
+![handgesture-recognition-and-processing](readme/handgesture-recognition-and-processing.png) 
