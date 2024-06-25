@@ -16,7 +16,7 @@
 - [x] RSS Feed for news 
 - [ ] Voice assistant
 
-![handgesture-recognition-and-processing](readme/handgesture-recognition-and-processing.png) 
+![handgesture-recognition-and-processing](./readme/handgesture-recognition-and-processing.png) 
 
 ### [Google Calender API](https://github.com/kuzmoyev/google-calendar-simple-api)
 
@@ -28,4 +28,4 @@
 
 ## How am I to go on about this project ???
 
-(NYA)
+![timeline](./readme/timeline.png) 
