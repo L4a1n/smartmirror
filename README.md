@@ -1,6 +1,12 @@
 # SmartMirror
 
 > A little sideproject 
+> A SmartMirror with lots of funktions including:
+> - Weather Feed 
+> - RSS Feed 
+> - Calender (Google)
+> - UI controlled by handgestures 
+> - maybe even Voice assistant (depends on how sane I'll still be after implementing everything else...)
 
 ## Finding resources for what I want to implement...
 - [x] GTK window with python
