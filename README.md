@@ -9,6 +9,7 @@
 
 ## Finding resources for what I want to implement...
 - [x] GTK window with python
+- [x] Weather forecast
 - [ ] Camera Input and normalization
 - [x] gesture recognition with camera input
 - [x] Calender (google, etc.)
@@ -20,6 +21,8 @@
 ### [Google Calender API](https://github.com/kuzmoyev/google-calendar-simple-api)
 
 ### [RSS Feed Parser for Python](https://www.tutorialspoint.com/python_text_processing/python_reading_rss_feed.html)
+
+### [Weather Library Docs](https://python-weather.readthedocs.io/en/latest/)
 
 ---
 
