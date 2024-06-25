@@ -27,7 +27,7 @@ async def getweather():
 if __name__ == '__main__':
   # see https://stackoverflow.com/questions/45600579/asyncio-event-loop-is-closed-when-getting-loop
   # for more details
-  if os.name == 'nt':
-    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+  #if os.name == 'nt':
+  #  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
    
   asyncio.run(getweather())
