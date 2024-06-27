@@ -13,15 +13,23 @@ class MyWindow(Gtk.Window):
         self.set_border_width(10)
         self.set_default_size(400, 300)
         
-        button = Gtk.Button(label="get the weather")
-        button.connect("clicked", self.on_button_clicked)
+        hbox = Gtk.Box(spacing=10)
+        self.add(hbox)
+
+        button = Gtk.Button.new_with_label("get todays weather")
+        button.connect("clicked", self.pressTodaysWeather)
+        hbox.pack_start(button, True, True, 0)
+        button = Gtk.Button.new_with_label("get this weeks weather")
+        button.connect("clicked", self.pressWeeksWeather)
+        hbox.pack_start(button, True, True, 0)
         
-        self.add(button)
         
-    def on_button_clicked(self, widget):
-        print("Button was clicked!")
+    def pressTodaysWeather(self, widget):
         print(asyncio.run(getWeatherToday('Kassel')))
+
+    def pressWeeksWeather(self, widget):
         print(asyncio.run(getWeatherWeek('Kassel')))
+
 
 win = MyWindow()
 win.connect("destroy", Gtk.main_quit)
