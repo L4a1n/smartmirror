@@ -4,20 +4,22 @@ import asyncio
 
 # Return todays weather
 async def getWeatherToday(city):
-    temp = None
+    tempDaily = []
+    tempHouhrly = []
     async with python_weather.Client() as client:
         try:
             weather = await client.get(city)
         except:
             return "Something went wrong"
-# get the weather forecast for a few days
+    # get the weather forecast for three days
     for daily in weather.daily_forecasts:
-      print(daily)
+        tempDaily.append(daily)
 
-      # hourly forecasts
-      for hourly in daily.hourly_forecasts:
-        print(f' --> {hourly!r}')
-    return temp
+        # hourly forecasts for three days
+        for hourly in daily.hourly_forecasts:
+            tempHouhrly.append(hourly)
+    print(tempDaily)
+    
 
 # Return this weeks weather
 async def getWeatherWeek(city):
@@ -27,3 +29,5 @@ async def getWeatherWeek(city):
         except:
             return "Something went wrong"
     return weather.feels_like
+
+asyncio.run(getWeatherToday('Kassel'))

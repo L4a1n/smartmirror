@@ -19,6 +19,7 @@ class MyWindow(Gtk.Window):
         button = Gtk.Button.new_with_label("get todays weather")
         button.connect("clicked", self.pressTodaysWeather)
         hbox.pack_start(button, True, True, 0)
+
         button = Gtk.Button.new_with_label("get this weeks weather")
         button.connect("clicked", self.pressWeeksWeather)
         hbox.pack_start(button, True, True, 0)
