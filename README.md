@@ -20,7 +20,7 @@
 
 ### [Google Calender API](https://github.com/kuzmoyev/google-calendar-simple-api)
 
-### [RSS Feed Parser for Python](https://www.tutorialspoint.com/python_text_processing/python_reading_rss_feed.html)
+### [RSS Feed Parser for Python](https://www.tutorialspoint.com/python_text_processing/python_reading_rss_feed.htm)
 
 ### [Weather Library Docs](https://python-weather.readthedocs.io/en/latest/)
 
@@ -29,3 +29,5 @@
 ## How am I to go on about this project ???
 
 ![timeline](./readme/timeline.png) 
+
+Uhhh yeah... I think thats how I wanna do this or atleas in wich order... 
