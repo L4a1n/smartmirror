@@ -1,6 +1,6 @@
 import gi
 import asyncio
-from weather import getWeatherToday, getWeatherWeek
+from weather import getWeatherToday
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
@@ -20,16 +20,8 @@ class MyWindow(Gtk.Window):
         button.connect("clicked", self.pressTodaysWeather)
         hbox.pack_start(button, True, True, 0)
 
-        button = Gtk.Button.new_with_label("get this weeks weather")
-        button.connect("clicked", self.pressWeeksWeather)
-        hbox.pack_start(button, True, True, 0)
-        
-        
     def pressTodaysWeather(self, widget):
-        print(asyncio.run(getWeatherToday('Kassel')))
-
-    def pressWeeksWeather(self, widget):
-        print(asyncio.run(getWeatherWeek('Kassel')))
+        print(asyncio.run(getWeatherToday()))
 
 
 win = MyWindow()

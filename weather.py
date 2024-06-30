@@ -4,7 +4,7 @@ from datetime import datetime
 import re
 
 # Return todays weather
-async def getWeatherToday(city):
+async def getWeatherToday(city="Kassel"):
     tempDaily = []
     tempHouhrly = []
     async with python_weather.Client() as client:
@@ -29,10 +29,4 @@ async def getWeatherToday(city):
             tempHouhrly.append(temp)
         tempDaily.append(tempHouhrly)
 
-    print(tempDaily)
-    print(len(tempDaily))
     return tempDaily
-    
-
-
-asyncio.run(getWeatherToday('Kassel'))
